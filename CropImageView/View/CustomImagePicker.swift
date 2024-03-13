@@ -22,6 +22,10 @@ extension View {
     func frame(_ size: CGSize) -> some View {
         self.frame(width: size.width, height: size.height)
     }
+
+    func haptics(_ style: UIImpactFeedbackGenerator.FeedbackStyle) {
+        UIImpactFeedbackGenerator(style: style).impactOccurred()
+    }
 }
 
 
@@ -75,7 +79,9 @@ fileprivate struct CustomImagePicker<Content: View>: View {
             selectedImage = nil
         } content: {
             CropView(crop: selectedCropType, image: selectedImage) { croppedImage, status in
-
+                if let croppedImage {
+                    self.croppedImage = croppedImage
+                }
             }
         }
     }
@@ -110,7 +116,14 @@ struct CropView: View {
                 .toolbar {
                 ToolbarItem (placement: .navigationBarTrailing) {
                     Button {
-
+                        let renderer = ImageRenderer(content: ImageView(true))
+                        renderer.proposedSize = .init(crop.size())
+                        if let image = renderer.uiImage {
+                            onCrop(image, true)
+                        } else {
+                            onCrop(nil, false)
+                        }
+                        dismiss()
                     } label: {
                         Image(systemName: "checkmark")
                             .font(.callout)
@@ -133,7 +146,7 @@ struct CropView: View {
 
     // 顯示選取圖片
     @ViewBuilder
-    func ImageView() -> some View {
+    func ImageView(_ hideGrids: Bool = false) -> some View {
         let cropSize = crop.size()
         GeometryReader {
             let size = $0.size
@@ -154,19 +167,23 @@ struct CropView: View {
                                 // 先處理 mix x,y
                                 if rect.minX > 0 {
                                     offset.width = (offset.width - rect.minX)
+                                    haptics(.medium)
                                 }
 
                                 if rect.minY > 0 {
                                     offset.height = (offset.height - rect.minY)
+                                    haptics(.medium)
                                 }
 
                                 // 接續處理 max x,y
                                 if rect.maxX < size.width {
                                     offset.width = (rect.minX - offset.width)
+                                    haptics(.medium)
                                 }
 
                                 if rect.maxY < size.height {
                                     offset.height = (rect.minY - offset.height)
+                                    haptics(.medium)
                                 }
                             }
 
@@ -183,7 +200,11 @@ struct CropView: View {
         }
             .scaleEffect(scale) // 值來至於 MagnifyGesture onChanged中的變動
         .offset(offset) // 值來至於 DragGesture onChanged中的變動
-        .overlay(content: Grids)
+        .overlay(content: {
+            if !hideGrids {
+                Grids()
+            }
+        })
             .coordinateSpace(name: "CROPVIEW")
             .gesture(
             DragGesture().updating($isInteracting, body: { _, out, _ in
@@ -248,7 +269,6 @@ struct CropView: View {
 
 struct CustomImagePicker_Previews: PreviewProvider {
     static var previews: some View {
-        // 這邊可以切換crop type
         CropView(crop: .square, image: UIImage(named: "1")) { _, _ in
 
         }
