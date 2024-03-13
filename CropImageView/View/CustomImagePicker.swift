@@ -234,8 +234,6 @@ struct CropView: View {
         )
             .frame(cropSize)
             .cornerRadius(crop == .circle ? cropSize.height / 2 : 0)
-
-
     }
 
     // 來個比例線條吧
