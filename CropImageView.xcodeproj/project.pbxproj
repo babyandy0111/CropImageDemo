@@ -7,24 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A98658C30D7D3F03D3A5D8A /* Pods_CropImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7443C5E1AD773AA88DCD512 /* Pods_CropImageView.framework */; };
 		A1F28AD02BA1EAFF0016AD87 /* CropImageViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F28ACF2BA1EAFF0016AD87 /* CropImageViewApp.swift */; };
 		A1F28AD22BA1EAFF0016AD87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F28AD12BA1EAFF0016AD87 /* ContentView.swift */; };
 		A1F28AD42BA1EB000016AD87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F28AD32BA1EB000016AD87 /* Assets.xcassets */; };
 		A1F28AD72BA1EB000016AD87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F28AD62BA1EB000016AD87 /* Preview Assets.xcassets */; };
 		A1F28ADF2BA1EB490016AD87 /* Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F28ADE2BA1EB490016AD87 /* Crop.swift */; };
-		A1F28AE22BA1EE070016AD87 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F28AE12BA1EE070016AD87 /* Home.swift */; };
+		A1F28AE22BA1EE070016AD87 /* ImageHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F28AE12BA1EE070016AD87 /* ImageHome.swift */; };
 		A1F28AE42BA1F0E50016AD87 /* CustomImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F28AE32BA1F0E50016AD87 /* CustomImagePicker.swift */; };
+		A1F4B9C02BA41DF100A3ECB1 /* ffmpegkit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4B9B82BA41DEE00A3ECB1 /* ffmpegkit.xcframework */; };
+		A1F4B9C12BA41DF100A3ECB1 /* libavcodec.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4B9B92BA41DEF00A3ECB1 /* libavcodec.xcframework */; };
+		A1F4B9C22BA41DF100A3ECB1 /* libavformat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4B9BA2BA41DF000A3ECB1 /* libavformat.xcframework */; };
+		A1F4B9C32BA41DF100A3ECB1 /* libswresample.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4B9BB2BA41DF000A3ECB1 /* libswresample.xcframework */; };
+		A1F4B9C42BA41DF100A3ECB1 /* libavdevice.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4B9BC2BA41DF000A3ECB1 /* libavdevice.xcframework */; };
+		A1F4B9C52BA41DF100A3ECB1 /* libavfilter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4B9BD2BA41DF000A3ECB1 /* libavfilter.xcframework */; };
+		A1F4B9C62BA41DF100A3ECB1 /* libavutil.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4B9BE2BA41DF000A3ECB1 /* libavutil.xcframework */; };
+		A1F4B9C72BA41DF100A3ECB1 /* libswscale.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F4B9BF2BA41DF100A3ECB1 /* libswscale.xcframework */; };
+		A1F4B9C92BA41F0200A3ECB1 /* 1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A1F4B9C82BA41F0200A3ECB1 /* 1.mp4 */; };
+		A1F4B9CB2BA420A600A3ECB1 /* VideoHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F4B9CA2BA420A600A3ECB1 /* VideoHome.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A1F4B9B72BA403C300A3ECB1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		15DDF104AA15E657A019BC4B /* Pods-CropImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropImageView.release.xcconfig"; path = "Target Support Files/Pods-CropImageView/Pods-CropImageView.release.xcconfig"; sourceTree = "<group>"; };
+		37EBDA5C53BE90ED007EBE36 /* Pods-CropImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CropImageView.debug.xcconfig"; path = "Target Support Files/Pods-CropImageView/Pods-CropImageView.debug.xcconfig"; sourceTree = "<group>"; };
 		A1F28ACC2BA1EAFF0016AD87 /* CropImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CropImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F28ACF2BA1EAFF0016AD87 /* CropImageViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageViewApp.swift; sourceTree = "<group>"; };
 		A1F28AD12BA1EAFF0016AD87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1F28AD32BA1EB000016AD87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1F28AD62BA1EB000016AD87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1F28ADE2BA1EB490016AD87 /* Crop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crop.swift; sourceTree = "<group>"; };
-		A1F28AE12BA1EE070016AD87 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A1F28AE12BA1EE070016AD87 /* ImageHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHome.swift; sourceTree = "<group>"; };
 		A1F28AE32BA1F0E50016AD87 /* CustomImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImagePicker.swift; sourceTree = "<group>"; };
+		A1F4B9B82BA41DEE00A3ECB1 /* ffmpegkit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ffmpegkit.xcframework; sourceTree = "<group>"; };
+		A1F4B9B92BA41DEF00A3ECB1 /* libavcodec.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavcodec.xcframework; sourceTree = "<group>"; };
+		A1F4B9BA2BA41DF000A3ECB1 /* libavformat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavformat.xcframework; sourceTree = "<group>"; };
+		A1F4B9BB2BA41DF000A3ECB1 /* libswresample.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libswresample.xcframework; sourceTree = "<group>"; };
+		A1F4B9BC2BA41DF000A3ECB1 /* libavdevice.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavdevice.xcframework; sourceTree = "<group>"; };
+		A1F4B9BD2BA41DF000A3ECB1 /* libavfilter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavfilter.xcframework; sourceTree = "<group>"; };
+		A1F4B9BE2BA41DF000A3ECB1 /* libavutil.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavutil.xcframework; sourceTree = "<group>"; };
+		A1F4B9BF2BA41DF100A3ECB1 /* libswscale.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libswscale.xcframework; sourceTree = "<group>"; };
+		A1F4B9C82BA41F0200A3ECB1 /* 1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.mp4; sourceTree = "<group>"; };
+		A1F4B9CA2BA420A600A3ECB1 /* VideoHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHome.swift; sourceTree = "<group>"; };
+		F7443C5E1AD773AA88DCD512 /* Pods_CropImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CropImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +69,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F4B9C62BA41DF100A3ECB1 /* libavutil.xcframework in Frameworks */,
+				8A98658C30D7D3F03D3A5D8A /* Pods_CropImageView.framework in Frameworks */,
+				A1F4B9C52BA41DF100A3ECB1 /* libavfilter.xcframework in Frameworks */,
+				A1F4B9C32BA41DF100A3ECB1 /* libswresample.xcframework in Frameworks */,
+				A1F4B9C22BA41DF100A3ECB1 /* libavformat.xcframework in Frameworks */,
+				A1F4B9C12BA41DF100A3ECB1 /* libavcodec.xcframework in Frameworks */,
+				A1F4B9C42BA41DF100A3ECB1 /* libavdevice.xcframework in Frameworks */,
+				A1F4B9C72BA41DF100A3ECB1 /* libswscale.xcframework in Frameworks */,
+				A1F4B9C02BA41DF100A3ECB1 /* ffmpegkit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03760E5E760335881B3EE42E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F4B9B82BA41DEE00A3ECB1 /* ffmpegkit.xcframework */,
+				A1F4B9B92BA41DEF00A3ECB1 /* libavcodec.xcframework */,
+				A1F4B9BC2BA41DF000A3ECB1 /* libavdevice.xcframework */,
+				A1F4B9BD2BA41DF000A3ECB1 /* libavfilter.xcframework */,
+				A1F4B9BA2BA41DF000A3ECB1 /* libavformat.xcframework */,
+				A1F4B9BE2BA41DF000A3ECB1 /* libavutil.xcframework */,
+				A1F4B9BB2BA41DF000A3ECB1 /* libswresample.xcframework */,
+				A1F4B9BF2BA41DF100A3ECB1 /* libswscale.xcframework */,
+				F7443C5E1AD773AA88DCD512 /* Pods_CropImageView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A1F28AC32BA1EAFF0016AD87 = {
 			isa = PBXGroup;
 			children = (
 				A1F28ACE2BA1EAFF0016AD87 /* CropImageView */,
 				A1F28ACD2BA1EAFF0016AD87 /* Products */,
+				D355A993566A023854148A03 /* Pods */,
+				03760E5E760335881B3EE42E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +121,7 @@
 		A1F28ACE2BA1EAFF0016AD87 /* CropImageView */ = {
 			isa = PBXGroup;
 			children = (
+				A1F4B9C82BA41F0200A3ECB1 /* 1.mp4 */,
 				A1F28AE02BA1EDF30016AD87 /* View */,
 				A1F28ADD2BA1EB360016AD87 /* Model */,
 				A1F28ACF2BA1EAFF0016AD87 /* CropImageViewApp.swift */,
@@ -86,10 +151,20 @@
 		A1F28AE02BA1EDF30016AD87 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A1F28AE12BA1EE070016AD87 /* Home.swift */,
+				A1F28AE12BA1EE070016AD87 /* ImageHome.swift */,
 				A1F28AE32BA1F0E50016AD87 /* CustomImagePicker.swift */,
+				A1F4B9CA2BA420A600A3ECB1 /* VideoHome.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D355A993566A023854148A03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37EBDA5C53BE90ED007EBE36 /* Pods-CropImageView.debug.xcconfig */,
+				15DDF104AA15E657A019BC4B /* Pods-CropImageView.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1F28ADA2BA1EB000016AD87 /* Build configuration list for PBXNativeTarget "CropImageView" */;
 			buildPhases = (
+				6433B70EC76C6CDA7FE0F13F /* [CP] Check Pods Manifest.lock */,
 				A1F28AC82BA1EAFF0016AD87 /* Sources */,
 				A1F28AC92BA1EAFF0016AD87 /* Frameworks */,
 				A1F28ACA2BA1EAFF0016AD87 /* Resources */,
+				1FF53123F8975447D2F8DECE /* [CP] Embed Pods Frameworks */,
+				A1F4B9B72BA403C300A3ECB1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -150,12 +228,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F4B9C92BA41F0200A3ECB1 /* 1.mp4 in Resources */,
 				A1F28AD72BA1EB000016AD87 /* Preview Assets.xcassets in Resources */,
 				A1F28AD42BA1EB000016AD87 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FF53123F8975447D2F8DECE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CropImageView/Pods-CropImageView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CropImageView/Pods-CropImageView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CropImageView/Pods-CropImageView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6433B70EC76C6CDA7FE0F13F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CropImageView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1F28AC82BA1EAFF0016AD87 /* Sources */ = {
@@ -164,8 +285,9 @@
 			files = (
 				A1F28AD22BA1EAFF0016AD87 /* ContentView.swift in Sources */,
 				A1F28AD02BA1EAFF0016AD87 /* CropImageViewApp.swift in Sources */,
-				A1F28AE22BA1EE070016AD87 /* Home.swift in Sources */,
+				A1F28AE22BA1EE070016AD87 /* ImageHome.swift in Sources */,
 				A1F28ADF2BA1EB490016AD87 /* Crop.swift in Sources */,
+				A1F4B9CB2BA420A600A3ECB1 /* VideoHome.swift in Sources */,
 				A1F28AE42BA1F0E50016AD87 /* CustomImagePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,19 +416,23 @@
 		};
 		A1F28ADB2BA1EB000016AD87 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EBDA5C53BE90ED007EBE36 /* Pods-CropImageView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CropImageView/Preview Content\"";
+				DEVELOPMENT_TEAM = E7848VNV39;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,19 +448,23 @@
 		};
 		A1F28ADC2BA1EB000016AD87 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DDF104AA15E657A019BC4B /* Pods-CropImageView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CropImageView/Preview Content\"";
+				DEVELOPMENT_TEAM = E7848VNV39;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
